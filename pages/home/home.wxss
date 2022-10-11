@@ -1,0 +1,8 @@
+/* pages/home/home.wxss */
+.van-nav-bar__title {
+  padding-left: 30rpx !important;
+}
+
+.main {
+  padding: 30rpx;
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "device_tsl_edit_text": "plugin://quecPlugin/device_tsl_edit_text"
+  }
+}

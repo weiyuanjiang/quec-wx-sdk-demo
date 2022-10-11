@@ -1,0 +1,46 @@
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: white;
+  display: flex;
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 80;
+}
+
+.tab-bar-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 5%;
+}
+
+.tab-bar-item .iconimg {
+  width: 28px;
+  height: 28px;
+}
+
+.tab-bar-item cover-view {
+  font-size: 10px;
+  padding-top: 8rpx;
+}
+
+.imgCon {
+  position: relative;
+}
+
+.tag {
+  width: 12rpx;
+  height: 12rpx;
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  right: 0rpx;
+  top: 5rpx;
+}

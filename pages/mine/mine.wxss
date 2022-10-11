@@ -1,0 +1,57 @@
+page,
+.mine {
+  background: #ffffff;
+  height: 100%;
+}
+
+.van-nav-bar__title {
+  padding-left: 30rpx !important;
+}
+
+.header {
+  min-height: 400rpx;
+  background-color: #f9f8fb;
+  display: flex;
+  flex-direction: row;
+  padding: 0 30rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .left .txt {
+  padding-left: 30rpx;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 72rpx;
+}
+
+.van-cell {
+  padding-top: 80rpx !important;
+}
+
+.van-icon-arrow {
+  color: #BFBFBF !important;
+}
+
+.cellImg {
+  width: 24px;
+  height: 24px;
+  padding-right: 20rpx;
+}
+
+.cellTitle {
+  font-size: 16px;
+  color: #333333;
+}
+
+.hInfo .phone {
+  color: #999;
+  font-size: 14px;
+  padding-left: 30rpx;
+}

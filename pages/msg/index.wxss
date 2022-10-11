@@ -1,0 +1,13 @@
+page,
+.container {
+  /* background: #ffffff;
+  height: 100%; */
+}
+
+.van-nav-bar__title {
+  padding-left: 30rpx !important;
+}
+
+.main {
+  padding: 30rpx;
+}
