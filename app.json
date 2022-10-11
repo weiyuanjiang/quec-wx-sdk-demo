@@ -40,7 +40,7 @@
   },
   "plugins": {
     "quecPlugin": {
-      "version": "dev-c216626f7e11eeccd887127eab8f1702",
+      "version": "dev-f5bcea80a1d8b47434ee7378b82322d2",
       "provider": "wx5e9a3feb8df9122e"
     }
   },
