@@ -1,4 +1,5 @@
 import { tip } from '../../utils/tip.js'
+const plugin = requirePlugin('quecPlugin')
 Component({
   /**
    * 组件的属性列表
@@ -18,11 +19,16 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    btnColor: ''
   },
 
-  ready () {
-
+  pageLifetimes: {
+    show: function () {
+      this.setData({
+        btnColor: plugin.theme.getSkin().primary,
+      })
+    },
+    hide: function () { }
   },
 
   /**

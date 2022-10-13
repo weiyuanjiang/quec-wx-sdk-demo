@@ -1,4 +1,4 @@
-// components/protocol/index.js
+const plugin = requirePlugin('quecPlugin')
 Component({
   /**
    * 组件的属性列表
@@ -11,7 +11,17 @@ Component({
    * 组件的初始数据
    */
   data: {
-    checked: false
+    checked: false,
+    checkColor: ''
+  },
+
+  pageLifetimes: {
+    show: function () {
+      this.setData({
+        checkColor: plugin.theme.getSkin().primary,
+      })
+    },
+    hide: function () { }
   },
 
   /**

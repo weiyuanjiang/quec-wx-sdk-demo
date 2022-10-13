@@ -14,10 +14,6 @@ page {
   flex: 1;
 }
 
-.user-login-index--logo {
-  display: none !important;
-}
-
 .other-login-text {
   color: #999;
   font-size: 12px;
