@@ -17,4 +17,3 @@ export function tip (msg, icon) {
 export function hideTip () {
   wx.hideToast()
 }
-
