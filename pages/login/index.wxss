@@ -20,7 +20,7 @@ page {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 80rpx 0 40rpx;
+  margin: 60rpx 0 30rpx;
 }
 
 .other-login-text::before {
