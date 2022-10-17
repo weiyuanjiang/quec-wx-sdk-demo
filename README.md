@@ -51,7 +51,7 @@
 ```
 
 组件效果图：
-![链接](./ble.jpg)
+![链接](./images/doc/ble.jpg)
 
 |组件 | 属性 | 说明 |类型 |默认值 |必填 |
 | ---- | ---- | ---- |---- |---- |---- |
@@ -510,7 +510,7 @@ const plugin = requirePlugin('quecPlugin')
 }
 ```
 #### 2）组件效果图
-![链接](./login.jpg)
+![链接](./images/doc/login.jpg)
 
 #### 3）组件说明
 | 组件              | 属性          | 说明                                                    | 类型    | 默认值           | 必填 | 事件                                                                                                  |
@@ -987,7 +987,7 @@ const plugin = requirePlugin('quecPlugin')
 }
 ```
 #### 2）组件效果图
-![链接](./mine.jpg)
+![链接](./images/doc/mine.jpg)
 
 #### 3）组件说明
 |组件 | 属性 | 说明 |类型 |默认值 |必填 | 事件
@@ -1185,7 +1185,7 @@ const plugin = requirePlugin('quecPlugin')
 }
 ```
 #### 2）组件效果图
-![链接](./manage.jpg)
+![链接](./images/doc/manage.jpg)
 
 #### 3）组件说明
 |组件 | 属性 | 说明 |类型 |默认值 |必填 |事件
@@ -1383,7 +1383,7 @@ const plugin = requirePlugin('quecPlugin')
 }
 ```
 #### 2）组件效果图
-![链接](./share.jpg)
+![链接](./images/doc/share.jpg)
 
 #### 3）组件说明
 |组件 | 属性 | 说明 |类型 |默认值 |必填 |事件
@@ -1594,7 +1594,7 @@ const plugin = requirePlugin('quecPlugin')
 }
 ```
 #### 2）组件效果图
-![链接](./msg.jpg)
+![链接](./images/doc/msg.jpg)
 
 #### 3）组件说明
 |组件 | 属性 | 说明 |类型 |默认值 |必填 |事件
@@ -1748,7 +1748,7 @@ const plugin = requirePlugin('quecPlugin')
 }
 ```
 #### 2）组件效果图
-![链接](./control.jpg)
+![链接](./images/doc/control.jpg)
 
 #### 3）组件说明
 
@@ -2021,7 +2021,7 @@ const plugin = requirePlugin('quecPlugin')
 ##### 参数
 |属性 | 类型 | 默认值 |必填 |说明 |
 | ---- | ---- | ---- |---- |---- |
-| url | string |  http://192.168.25.64:30006  | 否 | 网络请求基础url |
+| url | string |  https://iot-api.quectelcn.com  | 否 | 网络请求基础url |
 
 ##### 示例代码
 ```
@@ -2037,7 +2037,7 @@ plugin.config.setBaseUrl('https://iot-api.quectelcn.com')
 ##### 参数
 |属性 | 类型 | 默认值 |必填 |说明 |
 | ---- | ---- | ---- |---- |---- |
-| url | string |  C.DM.29772.1  | 否 | 设置用户域 |
+| url | string |  C.DM.5903.1  | 否 | 设置用户域 |
 
 ##### 示例代码
 ```
@@ -2052,7 +2052,7 @@ plugin.config.setUserDomain('C.DM.5903.1')
 ##### 参数
 |属性 | 类型 | 默认值 |必填 |说明 |
 | ---- | ---- | ---- |---- |---- |
-| url | string | 'FPDko3tiB5HgTJhpHaUjpsYNGKbEHfjkqe2u8pB8gtKp'  | 否 | 设置用户域密钥 |
+| url | string | 'EufftRJSuWuVY7c6txzGifV9bJcfXHAFa7hXY5doXSn7'  | 否 | 设置用户域密钥 |
 
 ##### 示例代码
 ```
@@ -2067,7 +2067,7 @@ plugin.config.setUserDomainSecret('EufftRJSuWuVY7c6txzGifV9bJcfXHAFa7hXY5doXSn7'
 ##### 参数
 |属性 | 类型 | 默认值 |必填 |说明 |
 | ---- | ---- | ---- |---- |---- |
-| url | string | 'ws://192.168.25.64:30777/ws/v1'  | 否 | 设置用户域密钥 |
+| url | string | 'wss://iot-ws.quectel.com/ws/v1'  | 否 | 设置用户域密钥 |
 
 ##### 示例代码
 ```
