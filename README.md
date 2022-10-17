@@ -19,7 +19,7 @@
 在小程序代码：app.json文件中
 "plugins": {
   "quecPlugin": {
-    "version": "1.1.1",
+    "version": "1.1.2",
     "provider": "wx5e9a3feb8df9122e"
   }
 }
@@ -978,12 +978,10 @@ const plugin = requirePlugin('quecPlugin')
 例如：
 {
   "usingComponents": {
-    "account_logout": "plugin://quecPlugin/account_logout", //退出
     "account_info": "plugin://quecPlugin/account_info", //用户信息展示
     "account_nickname": "plugin://quecPlugin/account_nickname", //昵称修改
     "account_about": "plugin://quecPlugin/account_about", //关于我们
     "account_version": "plugin://quecPlugin/account_version", //当前版本
-    "account_cancel": "plugin://quecPlugin/account_cancel", //注销用户
     "account_edit_pwd": "plugin://quecPlugin/account_edit_pwd", //修改密码
   }
 }
@@ -994,14 +992,15 @@ const plugin = requirePlugin('quecPlugin')
 #### 3）组件说明
 |组件 | 属性 | 说明 |类型 |默认值 |必填 | 事件
 | ---- | ---- | ---- |---- |---- |---- |---- |
-| account_logout | btnStyle |  按钮样式 | string | - | 否 |logoutSuccess-退出成功
 | account_info | - |  - | - | - | - | goNikeName-跳转到修改昵称页面; goChangePwd-跳转到修改密码页面; logoutSuccess-退出成功回调
 | account_nickname | btnStyle |  按钮样式 | string | - | 否 | nicknameEditSuccess-昵称修改成功
 | account_about | imgTxt |  设置icon图标下面的标题 | string | 移块上云 | 否 |goProtocol-跳转用户协议页面；goPrivacy-跳转隐私协议页面
-| account_about | version |  版本号 | string | V1.0.0 | 否 | goVersion-跳转到当前版本页面、goAboutQuec-跳转调关于移远页面
+| account_about | version |  版本号 | string | V1.0.0 | 否 | goVersion-跳转到当前版本页面、goProtocol-跳转调服务协议页面、goPrivacy-跳转到隐私政策页面
+| account_about | isVersion |  是否显示当前版本 | Boolean | true | 否 | 
+| account_about | isProtocol |  是否显示服务协议 | Boolean | false | 否 |
+| account_about | isPrivacy |  是否显示隐私政策 | Boolean | false | 否 |
 | account_version | phone |  电话 | string | +86 0551-65869386 | 否 |
 | account_version | version |  版本号 | string | V1.0.0 | 否 |
-| account_cancel | btnStyle |  按钮样式 | string | - | 否 |
 | account_edit_pwd | btnStyle |  按钮样式 | string | - | 否 |changePwdSuccess-密码修改成功回调
 
 ### 4、个人中心-我的接口
@@ -1997,6 +1996,22 @@ const plugin = requirePlugin('quecPlugin')
  plugin.theme.setSkin({primary:'#396CDB'})
 ```
 
+### 3、 setTitle
+##### 功能描述
+```
+设置小程序名称。
+```
+##### 参数
+|属性 | 类型 | 默认值 |必填 |说明 |
+| ---- | ---- | ---- |---- |---- |
+| title | string |  | 否 | 设置小程序名称|
+
+##### 示例代码
+```
+const plugin = requirePlugin('quecPlugin')
+ plugin.theme.setTitle('示例DEMO')
+```
+
 ## 十二、网络配置
 ### 1、 setBaseUrl 
 ##### 功能描述
@@ -2058,4 +2073,24 @@ plugin.config.setUserDomainSecret('EufftRJSuWuVY7c6txzGifV9bJcfXHAFa7hXY5doXSn7'
 ```
 const plugin = requirePlugin('quecPlugin')
 plugin.config.setWsUrl('wss://iot-ws.quectel.com/ws/v1')
+```
+
+### 5、 setToLoginFn 
+##### 功能描述
+```
+token过期回调函数。
+```
+##### 参数
+|回调函数 | 类型 | 默认值 |必填 |说明 |
+| ---- | ---- | ---- |---- |---- |
+| function | function |  | 是 | token过期回调函数 |
+
+##### 示例代码
+```
+const plugin = requirePlugin('quecPlugin')
+  plugin.config.setToLoginFn(() => {
+      wx.redirectTo({
+        url: '/pages/login/index'
+      })
+    })
 ```
