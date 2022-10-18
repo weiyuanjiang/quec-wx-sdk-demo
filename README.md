@@ -994,7 +994,6 @@ const plugin = requirePlugin('quecPlugin')
 | ---- | ---- | ---- |---- |---- |---- |---- |
 | account_info | - |  - | - | - | - | goNikeName-跳转到修改昵称页面; goChangePwd-跳转到修改密码页面; logoutSuccess-退出成功回调
 | account_nickname | btnStyle |  按钮样式 | string | - | 否 | nicknameEditSuccess-昵称修改成功
-| account_about | imgTxt |  设置icon图标下面的标题 | string | 移块上云 | 否 |goProtocol-跳转用户协议页面；goPrivacy-跳转隐私协议页面
 | account_about | version |  版本号 | string | V1.0.0 | 否 | goVersion-跳转到当前版本页面、goProtocol-跳转调服务协议页面、goPrivacy-跳转到隐私政策页面
 | account_about | isVersion |  是否显示当前版本 | Boolean | true | 否 | 
 | account_about | isProtocol |  是否显示服务协议 | Boolean | false | 否 |
