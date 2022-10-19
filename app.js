@@ -15,6 +15,12 @@ App({
         url: '/pages/login/index'
       })
     })
+
+    wx.loadFontFace({
+      family: 'Bitstream Vera Serif Bold',
+      source: 'url("https://img.yzcdn.cn/vant/vant-icon-96970a.woff2;https://at.alicdn.com/t/font_2553510_iv4v8nulyz.woff2?t=1649083952952")',
+      success: console.log
+    })
   },
 
   onHide () {
