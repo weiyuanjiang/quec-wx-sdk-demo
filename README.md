@@ -19,7 +19,7 @@
 在小程序代码：app.json文件中
 "plugins": {
   "quecPlugin": {
-    "version": "1.1.2",
+    "version": "1.1.6",
     "provider": "wx5e9a3feb8df9122e"
   }
 }
