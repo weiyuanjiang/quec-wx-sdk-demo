@@ -45,29 +45,60 @@ Component({
      * @param {*} e 
      */
     getUserInfo (e) {
+
+      let self = this
+      let rsData = {}
+      wx.login({
+        success: res => {
+          console.log(res)
+          rsData.wxCode = res.code
+        }, fail () {
+          console.log('login')
+          self.triggerEvent('getUserInfo', '')
+        }
+      })
+
       wx.getUserProfile({
         desc: '微信小程序SDK',
         success: (result) => {
-          let rsData = {
-            encryptedData: result.encryptedData,
-            iv: result.iv,
-            rawData: result.rawData,
-            signature: result.signature
-          }
-          wx.login({
-            success: res => {
-              console.log('code:' + res.code)
-              rsData.wxCode = res.code
-              this.triggerEvent('getUserInfo', JSON.stringify(rsData))
-
-            }, fail () {
-              this.triggerEvent('getUserInfo', '')
-            }
-          })
+          console.log(result)
+          rsData.encryptedData = result.encryptedData
+          rsData.iv = result.iv
+          rsData.rawData = result.rawData
+          rsData.signature = result.signature
+          console.log(rsData)
+          self.triggerEvent('getUserInfo', JSON.stringify(rsData))
         }, fail () {
-          this.triggerEvent('getUserInfo', '')
+          console.log('fail')
+          self.triggerEvent('getUserInfo', '')
         }
       })
+
+
+
+      // wx.getUserProfile({
+      //   desc: '微信小程序SDK',
+      //   success: (result) => {
+      //     let rsData = {
+      //       encryptedData: result.encryptedData,
+      //       iv: result.iv,
+      //       rawData: result.rawData,
+      //       signature: result.signature
+      //     }
+      //     wx.login({
+      //       success: res => {
+      //         console.log('code:' + res.code)
+      //         rsData.wxCode = res.code
+      //         this.triggerEvent('getUserInfo', JSON.stringify(rsData))
+
+      //       }, fail () {
+      //         this.triggerEvent('getUserInfo', '')
+      //       }
+      //     })
+      //   }, fail () {
+      //     this.triggerEvent('getUserInfo', '')
+      //   }
+      // })
     },
 
     /**
