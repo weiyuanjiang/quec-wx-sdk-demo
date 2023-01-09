@@ -110,12 +110,5 @@ Component({
       this.triggerEvent('getPhoneNumber', e.detail)
     },
 
-
-    /**
-     * 关闭手机号授权弹框
-     */
-    // onClose () {
-    //   this.setData({ phoneVisible: false })
-    // }
   }
 })
