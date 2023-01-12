@@ -23,7 +23,7 @@
 ```
 ### 2、在已有小程序中引用SDK
 ```
-1）在小程序代码：app.json文件中
+1）在您的小程序代码：app.json文件中
 "plugins": {
   "quecPlugin": {
     "version": "1.1.6",
