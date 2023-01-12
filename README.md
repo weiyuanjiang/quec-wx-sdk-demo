@@ -19,7 +19,7 @@
 ```
 1）下载微信开发者工具,下载地址：https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 2）下载该demo代码至本地，运行npm install
-3）在微信开发者工具中导入项目（换成您的appid）-选择工具-构建npm，即可在模拟器中看到效果
+3）在微信开发者工具中导入项目-选择工具-构建npm，即可在模拟器中看到效果
 ```
 ### 2、在已有小程序中引用SDK
 ```
