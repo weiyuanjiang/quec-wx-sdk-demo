@@ -28,9 +28,6 @@ App({
   },
 
   onShow () {
-    plugin.config.setUserDomain('C.DM.5903.1')
-    plugin.config.setUserDomainSecret('EufftRJSuWuVY7c6txzGifV9bJcfXHAFa7hXY5doXSn7')
-
     plugin.theme.setSkin({
       primary: 'green'
     })
