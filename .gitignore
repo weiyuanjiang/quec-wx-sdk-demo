@@ -10,6 +10,7 @@ package-lock.json
 /node_modules
 
 # Editor directories and files
+.git
 .idea
 .vscode
 *.suo
