@@ -125,13 +125,8 @@ const plugin = requirePlugin('quecPlugin')
 ##### 示例代码
 ```
 const plugin = requirePlugin('quecPlugin')
- plugin.quecBle.onBLEDeviceFound({
-    success (res) {
-         console.log(res)
-     },
-     fail (res) {
-        console.log(JSON.stringify(res))
-      }
+ plugin.quecBle.onBLEDeviceFound(res=>{
+   console.log(res)
  })
 ```
 
