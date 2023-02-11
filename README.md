@@ -548,26 +548,12 @@ const plugin = requirePlugin('quecPlugin')
 phoneVisible-是否展示获取用户号码授权弹框
 isCheck-是否勾选用户协议
 
-3）plugin中components新建wx_login组件
-wx_login/index.js：调用接口api实现微信登录的逻辑，将登录的结果绑定wxLoginSuccess事件
-wx_login/index.json：
-"componentGenerics": {
-  "wx_info": true
-}
-wx_login/index.wxml:
-<wx_info 
-  bind:getPhoneNumber="getPhoneNumber" 
-  bind:getUserInfo="getUserInfo" 
-  phoneVisible="{{phoneNoVisible}}" 
-  isCheck="{{agreecheck}}" 
-/>
-
-4）plugin 中plugin.json中配置：
+3）plugin 中plugin.json中配置：
   "publicComponents": {
     "wx_login": "components/user/wx_login/index",
   }
 
-5）小程序端页面调用：
+4）小程序端页面调用：
 json文件中配置
 "usingComponents": {
   "wx_login": "plugin://wxscan-plugin/wx_login",
