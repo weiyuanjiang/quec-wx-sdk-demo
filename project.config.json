@@ -35,7 +35,8 @@
     "useCompilerPlugins": false,
     "minifyWXML": true,
     "localPlugins": false,
-    "ignoreUploadUnusedFiles": true
+    "ignoreUploadUnusedFiles": true,
+    "condition": false
   },
   "condition": {},
   "editorSetting": {

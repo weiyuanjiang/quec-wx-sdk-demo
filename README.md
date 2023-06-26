@@ -532,28 +532,10 @@ const plugin = requirePlugin('quecPlugin')
 | user_register_pwd | btnStyle      | 按钮样式                                                | string  | -                | 否   | -    |regSuccess-注册成功回调；emailCodeValid-邮箱验证码错误后回调
 | user_register_pwd   |  curItem   |  user_register_pwd组件中传递的手机号/邮箱uname，验证码code |  Object       |  {}  |   是  |          |
 
-#### 4）微信一键登录具体实现
+#### 4）微信一键登录页面调用
 
 ```
-在插件开发中，部分API受限制，无法在插件中直接使用，如：获取用户信息，获取用户号码等，因此微信一键登录组件，采用抽象节点的方式实现。
-1)小程序miniprogram端app.json中，配置插件信息
-  "plugins": {
-    "wxscan-plugin": {
-      "version": "dev",
-      "provider": "wx5e9a3feb8df9122e"
-    }
-  }
-
-2)小程序miniprogram端components中新建wx_info组件，将用户信息getUserInfo及手机号信息getPhoneNumber通过事件绑定传递出去,同时设置如下属性：
-phoneVisible-是否展示获取用户号码授权弹框
-isCheck-是否勾选用户协议
-
-3）plugin 中plugin.json中配置：
-  "publicComponents": {
-    "wx_login": "components/user/wx_login/index",
-  }
-
-4）小程序端页面调用：
+小程序端页面调用：
 json文件中配置
 "usingComponents": {
   "wx_login": "plugin://wxscan-plugin/wx_login",
