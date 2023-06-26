@@ -35,8 +35,8 @@ App({
     plugin.theme.setLogo(toBase64('/images/mine/headImage.png'))
     plugin.theme.setTitle('示例DEMO')
     //如用户有自己的用户域及密钥，请设置成自己的哦
-    plugin.config.setUserDomain('用户自己的用户域')
-    plugin.config.setUserDomainSecret('用户自己的用户域密钥')
+    plugin.config.setUserDomain('用户的用户域')
+    plugin.config.setUserDomainSecret('用户的用户域密钥')
 
     wx.getSystemInfoAsync({
       success: (res) => {

@@ -33,8 +33,8 @@
 
 2）如用户有自己的用户域，在app.js中请设置自己的用户域及密钥，接口如下：
 const plugin = requirePlugin('quecPlugin')
-plugin.config.setUserDomain('用户自己的用户域')
-plugin.config.setUserDomainSecret('用户自己的用户域密钥')
+plugin.config.setUserDomain('用户的用户域')
+plugin.config.setUserDomainSecret('用户的用户域密钥')
 
 
 3）授权：可将AppID和AppSecret提供给我们进行授权后，即可正常使用
