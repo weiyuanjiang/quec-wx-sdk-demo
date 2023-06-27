@@ -41,7 +41,7 @@ plugin.config.setUserDomainSecret('用户域密钥')
 ```
 ### 3、特别说明
 ```
-因微信官方限制（详见：https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html),
+因微信官方限制,详见：https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html,
 建议使用企业小程序，个人小程序，手机号信息将无法获取，微信一键登录功能将不能正常使用。
 其他登录方式可正常使用。
 ```
