@@ -12,6 +12,7 @@ Page({
   },
 
   handleBack (e) {
+    console.log('只写结构体')
     const { detail } = e
     let pages = getCurrentPages()             //  获取页面栈
     let prevPage = pages[pages.length - 2]    // 上一个页面

@@ -21,6 +21,7 @@ Page({
   },
 
   handleSubmit (e) {
+    console.log('aaaa')
     const { detail } = e
     let pages = getCurrentPages()             //  获取页面栈
     let prevPage = pages[pages.length - 2]    // 上一个页面

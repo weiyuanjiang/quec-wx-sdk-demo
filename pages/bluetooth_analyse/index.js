@@ -34,6 +34,8 @@ Page({
 
   },
   networkSuccess (e) {
+    console.log('networkSuccess')
+    console.log(e)
     const { detail } = e
     let item = {
       dk: detail.deviceKey,

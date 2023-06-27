@@ -13,6 +13,7 @@ Page({
    */
   onLoad (options) {
     let self = this
+    console.log(options)
     if (options.item) {
       self.setData({
         dItem: JSON.parse(options.item)
