@@ -26,7 +26,7 @@
 1）在您的小程序代码：app.json文件中
 "plugins": {
   "quecPlugin": {
-    "version": "1.1.6",
+    "version": "1.2.0",
     "provider": "wx5e9a3feb8df9122e"
   }
 }

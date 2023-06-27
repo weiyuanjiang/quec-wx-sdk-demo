@@ -1,4 +1,4 @@
-import {toLogin} from '../../utils/tool.js'
+import { toLogin } from '../../utils/tool.js'
 Page({
 
   /**
