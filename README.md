@@ -37,7 +37,12 @@ plugin.config.setUserDomain('用户域')
 plugin.config.setUserDomainSecret('用户域密钥')
 
 
-3）授权：可将AppID和AppSecret提供给我们进行授权后，即可正常使用
+3）授权：可将AppID和AppSecret提供给我们进行授权后，点击微信开发者工具-清缓存，然后点击“编译”即可正常运行。
+```
+### 3、特别说明
+```
+因微信官方限制（详见：https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html），建议使用企业小程序，个人小程序，手机号信息将无法获取，微信一键登录功能将不能正常使用。其他登录方式可正常使用。
+
 ```
 
 ## 三、蓝牙配网
