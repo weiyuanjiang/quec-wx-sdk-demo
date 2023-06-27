@@ -695,7 +695,7 @@ const plugin = requirePlugin('quecPlugin')
 const plugin = requirePlugin('quecPlugin')
  plugin.quecUser.isPhoneRegister({
      internationalCode: '86',
-    phone: '18095653439',
+    phone: 'xxxxxx',
     success (res) {
          console.log(res)
      },
@@ -1919,11 +1919,6 @@ const plugin = requirePlugin('quecPlugin')
 ##### 示例代码
 ```
 const plugin = requirePlugin('quecPlugin')
- let sendData = [{
-        id: attrData.id,
-        value: sendValue,
-        type: attrData.dataType
- }]
  plugin.webSocket.msgCallback(function(res){
      // websocket 数据渲染
  })
@@ -2009,7 +2004,7 @@ const plugin = requirePlugin('quecPlugin')
 ##### 示例代码
 ```
 const plugin = requirePlugin('quecPlugin')
-plugin.config.setBaseUrl('https://iot-api.quectelcn.com')
+plugin.config.setBaseUrl('https://xx.com')
 ```
 
 ### 2、 setUserDomain 
@@ -2020,12 +2015,12 @@ plugin.config.setBaseUrl('https://iot-api.quectelcn.com')
 ##### 参数
 |属性 | 类型 | 默认值 |必填 |说明 |
 | ---- | ---- | ---- |---- |---- |
-| url | string |  C.DM.5903.1  | 否 | 设置用户域 |
+| url | string |  -  | 否 | 设置用户域 |
 
 ##### 示例代码
 ```
 const plugin = requirePlugin('quecPlugin')
-plugin.config.setUserDomain('C.DM.5903.1')
+plugin.config.setUserDomain('xxx')
 ```
 ### 3、 setUserDomainSecret 
 ##### 功能描述
@@ -2035,12 +2030,12 @@ plugin.config.setUserDomain('C.DM.5903.1')
 ##### 参数
 |属性 | 类型 | 默认值 |必填 |说明 |
 | ---- | ---- | ---- |---- |---- |
-| url | string | 'EufftRJSuWuVY7c6txzGifV9bJcfXHAFa7hXY5doXSn7'  | 否 | 设置用户域密钥 |
+| url | string | -  | 否 | 设置用户域密钥 |
 
 ##### 示例代码
 ```
 const plugin = requirePlugin('quecPlugin')
-plugin.config.setUserDomainSecret('EufftRJSuWuVY7c6txzGifV9bJcfXHAFa7hXY5doXSn7')
+plugin.config.setUserDomainSecret('xx')
 ```
 ### 4、 setWsUrl 
 ##### 功能描述
@@ -2050,12 +2045,12 @@ plugin.config.setUserDomainSecret('EufftRJSuWuVY7c6txzGifV9bJcfXHAFa7hXY5doXSn7'
 ##### 参数
 |属性 | 类型 | 默认值 |必填 |说明 |
 | ---- | ---- | ---- |---- |---- |
-| url | string | 'wss://iot-ws.quectel.com/ws/v1'  | 否 | 设置用户域密钥 |
+| url | string |   | 否 | 设置用户域密钥 |
 
 ##### 示例代码
 ```
 const plugin = requirePlugin('quecPlugin')
-plugin.config.setWsUrl('wss://iot-ws.quectel.com/ws/v1')
+plugin.config.setWsUrl('xx')
 ```
 
 ### 5、 setToLoginFn 
