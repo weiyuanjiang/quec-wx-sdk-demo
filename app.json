@@ -1,13 +1,12 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/login/index",
     "pages/login_code/index",
     "pages/user_forget_pwd/index",
     "pages/user_register/index",
     "pages/user_register_pwd/index",
     "pages/user_reset_pwd/index",
-
-    "pages/home/home",
     "pages/mine/mine",
     "pages/account_info/index",
     "pages/account_nickname/index",
